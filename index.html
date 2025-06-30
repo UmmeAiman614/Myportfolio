@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umme Aiman | Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Free CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+
+
+
+<body class="bg-[#F1EFEC] text-[#030303] font-sans">
+
+    <!-- Wrapper -->
+    <div class="flex flex-col md:flex-row min-h-screen">
+
+        <!-- Sidebar for Desktop -->
+        <aside
+            class="hidden md:flex md:flex-col md:w-1/4 bg-[#123458] dark:bg-[#F1EFEC] text-[#F1EFEC] dark:text-[#123458] p-8 fixed h-full">
+            <h1 class="text-3xl font-bold mb-2">Umme Aiman</h1>
+            <p class="mb-8 text-[#D4C9BE]">Web Developer</p>
+            <nav class="flex flex-col gap-6">
+                <a href="#about" class="hover:text-[#D4C9BE]">About</a>
+                <a href="#skills" class="hover:text-[#D4C9BE]">Skills</a>
+                <a href="#projects" class="hover:text-[#D4C9BE]">Projects</a>
+                <a href="#contact" class="hover:text-[#D4C9BE]">Contact</a>
+            </nav>
+            <div class="mt-8 flex gap-4">
+                <a href="https://github.com/UmmeAiman614" target="_blank" class="hover:text-[#D4C9BE]">
+                    <!-- GitHub Icon -->
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M12 .5C5.65.5.5 5.65.5 12A11.5 11.5 0 008.25 23.2c.6.1.8-.25.8-.55v-2c-3.3.7-4-1.55-4-1.55-.55-1.4-1.35-1.75-1.35-1.75-1.1-.75.1-.75.1-.75 1.2.1 1.85 1.2 1.85 1.2 1.05 1.85 2.75 1.35 3.45 1 .1-.75.4-1.35.7-1.65-2.65-.3-5.45-1.35-5.45-6 0-1.35.5-2.45 1.2-3.3-.1-.3-.5-1.55.1-3.2 0 0 1-.3 3.3 1.2A11.25 11.25 0 0112 5.75c1.05 0 2.1.15 3.1.4 2.3-1.5 3.3-1.2 3.3-1.2.6 1.65.2 2.9.1 3.2.75.85 1.2 1.95 1.2 3.3 0 4.65-2.8 5.7-5.5 6 .4.3.8 1 .8 2v3c0 .3.2.65.8.55A11.5 11.5 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/umme-aiman-6302862a9/" target="_blank"
+                    class="hover:text-[#D4C9BE]">
+                    <!-- LinkedIn Icon -->
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M4.98 3.5C3.34 3.5 2 4.82 2 6.45c0 1.62 1.32 2.95 2.96 2.95h.03c1.63 0 2.95-1.33 2.95-2.95C7.94 4.82 6.62 3.5 4.98 3.5zM2.4 21h5.17V8.84H2.4V21zM8.96 8.84V21h5.17v-6.26c0-3.54 4.57-3.83 4.57 0V21h5.17v-7.44c0-7.4-8.42-7.13-10.9-3.5V8.84H8.96z" />
+                    </svg>
+                </a>
+
+
+
+
+            </div>
+
+        </aside>
+
+        <!-- Top navbar for Mobile -->
+        <nav
+            class="flex justify-between items-center p-6 bg-[#123458] dark:bg-[#F1EFEC] text-[#F1EFEC] dark:text-[#123458] md:hidden">
+            <div class="text-xl font-bold">Umme Aiman</div>
+            <button id="menu-btn" class="text-3xl">&#9776;</button>
+
+
+        </nav>
+
+        <!-- Mobile dropdown menu -->
+        <div id="mobile-menu"
+            class="flex hidden flex-col gap-4 p-6 bg-[#123458] dark:bg-[#F1EFEC] text-[#F1EFEC] dark:text-[#123458] md:hidden">
+            <a href="#about" class="hover:text-[#D4C9BE]">About</a>
+            <a href="#skills" class="hover:text-[#D4C9BE]">Skills</a>
+            <a href="#projects" class="hover:text-[#D4C9BE]">Projects</a>
+            <a href="#contact" class="hover:text-[#D4C9BE]">Contact</a>
+            <div class="mt-8 flex gap-4">
+                <a href="https://github.com/UmmeAiman614" target="_blank" class="hover:text-[#D4C9BE]">
+                    <!-- GitHub Icon -->
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M12 .5C5.65.5.5 5.65.5 12A11.5 11.5 0 008.25 23.2c.6.1.8-.25.8-.55v-2c-3.3.7-4-1.55-4-1.55-.55-1.4-1.35-1.75-1.35-1.75-1.1-.75.1-.75.1-.75 1.2.1 1.85 1.2 1.85 1.2 1.05 1.85 2.75 1.35 3.45 1 .1-.75.4-1.35.7-1.65-2.65-.3-5.45-1.35-5.45-6 0-1.35.5-2.45 1.2-3.3-.1-.3-.5-1.55.1-3.2 0 0 1-.3 3.3 1.2A11.25 11.25 0 0112 5.75c1.05 0 2.1.15 3.1.4 2.3-1.5 3.3-1.2 3.3-1.2.6 1.65.2 2.9.1 3.2.75.85 1.2 1.95 1.2 3.3 0 4.65-2.8 5.7-5.5 6 .4.3.8 1 .8 2v3c0 .3.2.65.8.55A11.5 11.5 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/umme-aiman-6302862a9/" target="_blank"
+                    class="hover:text-[#D4C9BE]">
+                    <!-- LinkedIn Icon -->
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M4.98 3.5C3.34 3.5 2 4.82 2 6.45c0 1.62 1.32 2.95 2.96 2.95h.03c1.63 0 2.95-1.33 2.95-2.95C7.94 4.82 6.62 3.5 4.98 3.5zM2.4 21h5.17V8.84H2.4V21zM8.96 8.84V21h5.17v-6.26c0-3.54 4.57-3.83 4.57 0V21h5.17v-7.44c0-7.4-8.42-7.13-10.9-3.5V8.84H8.96z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Main Content Wrapper -->
+        <main class="flex-1 md:ml-[25%] p-6 md:p-12 space-y-24">
+
+            <!-- Hero/About -->
+            <section id="about" class="flex flex-col md:flex-row items-center md:items-start gap-10" data-aos="fade-up">
+                <!-- Profile Image -->
+                <img src="images/my_image-removebg-preview.png" alt="Umme Aiman"
+                    class="w-48 h-48 rounded-full object-cover border-4 border-[#D4C9BE]" />
+
+                <!-- Text & Buttons -->
+                <div class="flex flex-col">
+                    <h2 class="text-4xl font-bold text-[#123458] mb-4">Hi, I'm Umme Aiman</h2>
+                    <p class="text-lg max-w-2xl mb-6">
+                        I’m a passionate Web Developer specializing in HTML, CSS, Tailwind CSS, JavaScript, and the MERN
+                        Stack.
+                        I build clean, modern, responsive web applications with a focus on performance and great user
+                        experience.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="mailto:ummeaiman614@gmail.com"
+                            class="px-4 py-2 bg-[#123458] text-[#F1EFEC] rounded hover:bg-[#D4C9BE] hover:text-[#030303]">Hire
+                            Me</a>
+                        <a href="https://export-download.canva.com/kBcRw/DAGrn6kBcRw/33/0-2952579736828644344.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20250628%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250628T065957Z&X-Amz-Expires=12461&X-Amz-Signature=1b860627cefbb82e8a507c38755ecc8b1d23a897318be61307367399e14cac06&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Blue%2520and%2520Gray%2520Simple%2520Professional%2520CV%2520Resume.pdf&response-expires=Sat%2C%2028%20Jun%202025%2010%3A27%3A38%20GMT"
+                            download
+                            class="px-4 py-2 border-2 border-[#123458] text-[#123458] rounded hover:bg-[#123458] hover:text-[#F1EFEC]">Download
+                            CV</a>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <!-- What I Do -->
+            <section id="what-i-do" class="space-y-8" data-aos="fade-up">
+                <h3 class="text-3xl font-bold text-[#123458] mb-4">What I Do</h3>
+                <p class="max-w-2xl mb-6">
+                    I design and develop modern, responsive websites and web applications. From frontend design to
+                    backend logic, I deliver clean, maintainable code and beautiful user interfaces.
+                </p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Service 1 -->
+                    <div
+                        class="bg-white border-2 border-[#D4C9BE] p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between">
+                        <div class="text-center">
+                            <i class="fa-solid fa-laptop-code text-4xl text-[#123458] mb-4"></i>
+                            <h4 class="text-xl font-bold text-[#123458] mb-2">Frontend Development</h4>
+                            <p>I create pixel-perfect, responsive interfaces using HTML, CSS, Tailwind CSS, and modern
+                                JavaScript frameworks.</p>
+                        </div>
+                        <!-- <a href="#projects"
+                            class="mt-4 inline-flex items-center gap-2 justify-center text-[#123458] hover:text-[#D4C9BE] underline">
+                            View My Frontend Work <i class="fa-solid fa-arrow-right"></i>
+                        </a> -->
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div
+                        class="bg-white border-2 border-[#D4C9BE] p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between">
+                        <div class="text-center">
+                            <i class="fa-solid fa-server text-4xl text-[#123458] mb-4"></i>
+                            <h4 class="text-xl font-bold text-[#123458] mb-2">Backend Development</h4>
+                            <p>I build robust backend services and APIs using Node.js, Express, and MongoDB to handle
+                                data and business logic securely.</p>
+                        </div>
+                        <!-- <a href="#projects"
+                            class="mt-4 inline-flex items-center gap-2 justify-center text-[#123458] hover:text-[#D4C9BE] underline">
+                            See Backend Projects <i class="fa-solid fa-arrow-right"></i>
+                        </a> -->
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div
+                        class="bg-white border-2 border-[#D4C9BE] p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between">
+                        <div class="text-center">
+                            <i class="fa-solid fa-layer-group text-4xl text-[#123458] mb-4"></i>
+                            <h4 class="text-xl font-bold text-[#123458] mb-2">Full-Stack Solutions</h4>
+                            <p>Combining frontend and backend skills, I deliver complete, end-to-end web applications
+                                using the MERN Stack.</p>
+                        </div>
+                        <!-- <a href="#contact"
+                            class="mt-4 inline-flex items-center gap-2 justify-center text-[#123458] hover:text-[#D4C9BE] underline">
+                            Hire Me for Full-Stack <i class="fa-solid fa-arrow-right"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <!-- Skills -->
+            <section id="skills" data-aos="fade-up">
+                <h3 class="text-3xl font-bold text-[#123458] mb-6">Skills & Proficiency</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Skill item -->
+                    <div>
+                        <h4 class="font-semibold text-[#123458] mb-2">HTML</h4>
+                        <div class="w-full bg-[#D4C9BE] rounded-full h-2 mb-4">
+                            <div class="bg-[#123458] h-2 rounded-full" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-[#123458] mb-2">CSS</h4>
+                        <div class="w-full bg-[#D4C9BE] rounded-full h-2 mb-4">
+                            <div class="bg-[#123458] h-2 rounded-full" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-[#123458] mb-2">Tailwind CSS</h4>
+                        <div class="w-full bg-[#D4C9BE] rounded-full h-2 mb-4">
+                            <div class="bg-[#123458] h-2 rounded-full" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-[#123458] mb-2">JavaScript</h4>
+                        <div class="w-full bg-[#D4C9BE] rounded-full h-2 mb-4">
+                            <div class="bg-[#123458] h-2 rounded-full" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-[#123458] mb-2">React</h4>
+                        <div class="w-full bg-[#D4C9BE] rounded-full h-2 mb-4">
+                            <div class="bg-[#123458] h-2 rounded-full" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-[#123458] mb-2">Node.js</h4>
+                        <div class="w-full bg-[#D4C9BE] rounded-full h-2 mb-4">
+                            <div class="bg-[#123458] h-2 rounded-full" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-[#123458] mb-2">Express</h4>
+                        <div class="w-full bg-[#D4C9BE] rounded-full h-2 mb-4">
+                            <div class="bg-[#123458] h-2 rounded-full" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-[#123458] mb-2">MongoDB</h4>
+                        <div class="w-full bg-[#D4C9BE] rounded-full h-2 mb-4">
+                            <div class="bg-[#123458] h-2 rounded-full" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Education -->
+            <section id="education" class="space-y-8" data-aos="fade-up">
+                <h3 class="text-3xl font-bold text-[#123458] mb-4">Education</h3>
+                <div class="space-y-6 md:space-y-0 md:grid md:grid-cols-2 gap-6">
+                    <!-- Degree 1 -->
+                    <div
+                        class="bg-white border-2 border-[#D4C9BE] p-6 rounded-lg shadow hover:shadow-lg transition text-center flex flex-col items-center">
+                        <!-- Image directly with controlled size -->
+                        <img src="https://logowik.com/content/uploads/images/iiui-international-islamic-university-islamabad6345.jpg"
+                            alt="IIUI" class="max-w-[180px] max-h-[120px] mx-auto mb-4 rounded">
+                        <!-- Icon -->
+                        <i class="fa-solid fa-graduation-cap text-3xl text-[#123458] mb-2"></i>
+                        <!-- Text -->
+                        <h4 class="text-xl font-bold text-[#123458] mb-2">BS in software engineering</h4>
+                        <p class="text-[#030303] mb-1">International Islamic University Islamabad</p>
+                        <p class="text-[#030303]">2024 — Present</p>
+                    </div>
+
+                    <!-- Degree 2 -->
+                    <div
+                        class="bg-white border-2 border-[#D4C9BE] p-6 rounded-lg shadow hover:shadow-lg transition text-center flex flex-col items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNDokNMVr4_BH51hsVIEAi61_3HIlHX7ngwA&s"
+                            alt="APSACS" class="max-w-[150px] max-h-[120px] mx-auto mb-4 rounded">
+                        <!-- Icon -->
+                        <i class="fa-solid fa-graduation-cap text-3xl text-[#123458] mb-2"></i>
+                        <!-- Text -->
+                        <h4 class="text-xl font-bold text-[#123458] mb-2">Intermediate in Pre-Engineering</h4>
+                        <p class="text-[#030303] mb-1">APSACS</p>
+                        <p class="text-[#030303]">2021 — 2023</p>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <!-- Projects -->
+            <section id="projects" class="space-y-8" data-aos="fade-up">
+                <h3 class="text-3xl font-bold text-[#123458] mb-4">Projects</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Project 1 -->
+                    <div
+                        class="bg-white border-2 border-[#D4C9BE] rounded-lg shadow hover:shadow-lg transition flex flex-col">
+                        <img src="images/portfolio website.png" alt="Portfolio Website"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <h4 class="text-xl font-bold text-[#123458] mb-2">Portfolio Website</h4>
+                            <p class="text-[#030303]">A clean, modern portfolio showcasing my web development skills,
+                                projects, and experience. Built with HTML, Tailwind CSS, and JavaScript.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="bg-white border-2 border-[#D4C9BE] rounded-lg shadow hover:shadow-lg transition flex flex-col">
+                        <img src="images/E-commerce website.png" alt="E-commerce Store"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <h4 class="text-xl font-bold text-[#123458] mb-2">E-commerce Store</h4>
+                            <p class="text-[#030303]">An online store with product catalog, shopping cart, and secure
+                                payment system. Built using the MERN stack for a complete full-stack solution.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div
+                        class="bg-white border-2 border-[#D4C9BE] rounded-lg shadow hover:shadow-lg transition flex flex-col">
+                        <img src="images/furniture 1.png" alt="Furniture Website"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <h4 class="text-xl font-bold text-[#123458] mb-2">Furniture Website</h4>
+                            <p class="text-[#030303]">A stylish website for a furniture store, featuring product
+                                showcases and a dynamic admin dashboard for managing inventory and orders.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div
+                        class="bg-white border-2 border-[#D4C9BE] rounded-lg shadow hover:shadow-lg transition flex flex-col">
+                        <img src="images/furniture 3.png" alt="Blog Platform"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <h4 class="text-xl font-bold text-[#123458] mb-2">Blog Platform</h4>
+                            <p class="text-[#030303]">A personal blogging platform with user registration, post
+                                creation, and commenting features. Built with Node.js, Express, MongoDB, and React.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div
+                        class="bg-white border-2 border-[#D4C9BE] rounded-lg shadow hover:shadow-lg transition flex flex-col">
+                        <img src="images/landing page.png" alt="Landing Page"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <h4 class="text-xl font-bold text-[#123458] mb-2">Landing Page</h4>
+                            <p class="text-[#030303]">A modern, responsive landing page designed to showcase a product
+                                or service with clear calls to action and beautiful UI elements.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div
+                        class="bg-white border-2 border-[#D4C9BE] rounded-lg shadow hover:shadow-lg transition flex flex-col">
+                        <img src="images/Salon website.png" alt="Salon Website"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <h4 class="text-xl font-bold text-[#123458] mb-2">Salon Website</h4>
+                            <p class="text-[#030303]">A sleek salon website featuring service listings, online booking,
+                                and a gallery. Fully responsive and built with modern web technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Contact -->
+            <section id="contact" class="space-y-8" data-aos="fade-up">
+                <h3 class="text-3xl font-bold text-[#123458] mb-4">Contact Me</h3>
+                <p class="max-w-2xl mb-6">
+                    I’d love to hear from you! Whether you have a project in mind, want to collaborate, or just want to
+                    say hello — feel free to reach out.
+                </p>
+
+                <!-- Contact Info -->
+                <div class="space-y-4">
+                    <p class="flex items-center gap-2 text-[#030303]">
+                        <i class="fa-solid fa-envelope text-[#123458]"></i>
+                        <span>ummeaiman614@example.com</span>
+                    </p>
+                    <p class="flex items-center gap-2 text-[#030303]">
+                        <i class="fa-solid fa-location-dot text-[#123458]"></i>
+                        <span>Rawalpindi, Pakistan</span>
+                    </p>
+                </div>
+
+            </section>
+
+
+            <!-- Footer -->
+            <footer class="bg-[#123458] text-[#F1EFEC] py-6 mt-12 w-full" data-aos="fade-up">
+                <div class="w-full px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <!-- Copyright -->
+                    <p class="text-center md:text-left w-full md:w-auto">&copy; 2025 Umme Aiman. All rights reserved.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="flex justify-center md:justify-end w-full md:w-auto space-x-4">
+                        <a href="mailto:ummeaiman614@gmail.com" class="hover:text-[#E44A28]" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/umme-aiman-6302862a9/" target="_blank"
+                            class="hover:text-[#E44A28]" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/UmmeAiman614" target="_blank" class="hover:text-[#E44A28]"
+                            aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+
+
+
+        </main>
+
+    </div>
+
+    <!-- JS for Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration (ms)
+            once: true      // Animation only once
+        });
+    </script>
+
+
+</body>
+
+</html>
